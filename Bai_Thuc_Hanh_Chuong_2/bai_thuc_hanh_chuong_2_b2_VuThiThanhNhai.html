@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>Danh Sách Sinh Viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #28a745;
+            color: white;
+        }
+
+        tbody tr:hover {
+            background-color: #e1f0ff;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0 6px;
+            color: #28a745;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #146133;
+        }
+
+        .fa-pen {
+            color: #28a745;
+        }
+
+        .fa-trash {
+            color: #28a745;
+        }
+
+        .fa-pen:hover, .fa-trash:hover {
+            transform: scale(1.5);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Danh Sách Sinh Viên</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>SV001</td>
+                <td>Nguyễn Văn A</td>
+                <td>a@gmail.com</td>
+                <td>Nam</td>
+                <td>2001-01-01</td>
+                <td>
+                    <a href="#"><i class="fa-solid fa-pen"></i></a>
+                    or
+                    <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SV002</td>
+                <td>Vũ Thị Thanh Nhài</td>
+                <td>nhaivu.2004@gmail.com</td>
+                <td>Nữ</td>
+                <td>2004-01-29</td>
+                <td>
+                    <a href="#"><i class="fa-solid fa-pen"></i></a>
+                    or
+                    <a href="#"><i class="fa-solid fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SV003</td>
+                <td>Lê Văn Quang</td>
+                <td>quanglv@gmail.com</td>
+                <td>Nam</td>
+                <td>2000-03-03</td>
+                <td>
+                    <a href="#"><i class="fa-solid fa-pen"></i></a>
+                    or
+                    <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>SV004</td>
+                <td>Trần Thị Mai</td>
+                <td>maitran@example.com</td>
+                <td>Nữ</td>
+                <td>2002-06-15</td>
+                <td>
+                    <a href="#"><i class="fa-solid fa-pen"></i></a>
+                    or
+                    <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>SV005</td>
+                <td>Phạm Minh Đức</td>
+                <td>ducpm@example.com</td>
+                <td>Nam</td>
+                <td>2001-11-20</td>
+                <td>
+                    <a href="#"><i class="fa-solid fa-pen"></i></a>
+                    or
+                    <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>SV006</td>
+                <td>Hoàng Ngọc Lan</td>
+                <td>lanhoang@example.com</td>
+                <td>Nữ</td>
+                <td>2003-09-12</td>
+                <td>
+                    <a href="#"><i class="fa-solid fa-pen"></i></a>
+                    or
+                    <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
