@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /*item duoc sap xep theo chieu doc tu tren xuong duoi*/
+  gap: 15px;
+}
+
+.infor-container {
+  display: flex; 
+  gap: 10px;
+}
+
+.infor-container input {
+  flex: 1;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background-color: #0b94d9;
+  color: white;
+  height: 35px;
+  width: 125px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #007acc;
+}

@@ -6,13 +6,20 @@ body {
 
 .navbar-container{
     background-color: #003478;
-    padding: 20px 20px 20px 20px;
+    margin: 30px 30px;
+    margin-left: 180px;
+    margin-right: 85px;
+    padding: 8px 5px;
+    border-radius: 6px;
+    height: 40px;
+
 }
 
 .navbar-container ul {
+   
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap:wrap; /* thu nho se xuong hang*/
 }
 
@@ -20,7 +27,10 @@ body {
     color:#ffffff;
     font-weight:bold;
     font-size: 16px;
-   
+    border-right: 3px solid #ccc;
+    padding: 10px 14px;
+    text-decoration: none;
+    
 }
 
 .navbar-container ul li a:hover {
