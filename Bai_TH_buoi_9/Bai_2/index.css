@@ -1,0 +1,168 @@
+/* Reset margin và font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* TOP BAR */
+.top-bar {
+  background-color: #212529;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.top-bar h5 {
+  margin: 0;
+}
+
+.top-bar ol {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+}
+
+.top-bar li input {
+  padding: 5px;
+}
+
+.top-bar li button {
+  padding: 5px 10px;
+}
+
+/* ACTION BAR */
+.action-bar {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+
+/* BẢNG DỮ LIỆU */
+table.manageStore {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.manageStore thead {
+  background-color: #343a40;
+  color: white;
+}
+
+.manageStore th,
+.manageStore td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.manageStore td i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+tfoot td {
+  text-align: center;
+  padding: 10px;
+}
+
+
+tfoot td, .btn-danger {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  
+}
+
+/* PHÂN TRANG */
+.clearfix {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hint-text {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.page-item {
+  display: inline-block;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  text-decoration: none;
+  color: #007bff;
+  border-radius: 4px;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+}
+
+/* MODAL FORM */
+.modal-body label {
+  font-weight: bold;
+}
+
+#formMessage {
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .action-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-bar ol {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+footer.bg-primary {
+  background-color: #001f60 !important;
+  color: white;
+  padding: 15px 0;
+  font-size: 14px;
+}

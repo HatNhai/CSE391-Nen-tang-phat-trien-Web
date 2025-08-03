@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery (chèn đúng chỗ trước index.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- index.js đặt sau jQuery -->
+    <script src="index.js"></script>
+
+    
+    <title>Bài thực hành buổi 9 - bài thứ 2</title>
+</head>
+<body>
+  <div class="top-bar">
+    <h5>Trường Đại học Thủy Lợi</h3>
+    <ol>
+      <li>Trang chủ</li>
+      <li>Quản lý cửa hàng</li>
+      <li><input type="text" placeholder="Nhập nội dung tìm kiếm"></li>
+      <li><button class="btn btn-light btn-sm">Tìm kiếm</button></li>
+    </ol>
+  </div>
+
+  <div class="action-bar">
+    <button id="btn-them" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">➕ Thêm</button>
+    <button class="btn btn-outline-secondary">📤 Xuất ra file</button>
+    <input type="text" placeholder="Tìm kiếm giao dịch" class="form-control w-25" />
+    
+  </div>
+
+  <table class="manageStore">
+    <thead>
+      <tr>
+        <th><i class="fa-solid fa-xmark"></i></th>
+        <th>Hành động</th>
+        <th>ID</th>
+        <th>Khách hàng</th>
+        <th>Nhân viên</th>
+        <th>Số tiền</th>
+        <th>Ngày mua</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><i class="fa-solid fa-xmark"></i></td>
+        <td><i class="fa-solid fa-eye"></i> <i class="fa-solid fa-pen"></i> <i class="fa-solid fa-xmark"></i></td>
+        <td>1102</td>
+        <td>Võ Hoài An</td>
+        <td>Mai Thục Anh</td>
+        <td>250.000</td>
+        <td>6/6/2024 9:00</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-xmark"></i></td>
+        <td><i class="fa-solid fa-eye"></i> <i class="fa-solid fa-pen"></i> <i class="fa-solid fa-xmark"></i></td>
+        <td>1119</td>
+        <td>Hoàng Thị Thắng</td>
+        <td>Nguyễn Văn Hồng</td>
+        <td>600.000</td>
+        <td>6/6/2024 9:03</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-xmark"></i></td>
+        <td><i class="fa-solid fa-eye"></i> <i class="fa-solid fa-pen"></i> <i class="fa-solid fa-xmark"></i></td>
+        <td>1677</td>
+        <td>Huỳnh Văn Nam</td>
+        <td>Mai Thục Anh</td>
+        <td>150.000</td>
+        <td>6/6/2024 9:10</td>
+      </tr>
+    </tbody> 
+  </table>
+
+  <button class="btn btn-danger">DELETE SELECTED OPTIONS</button>
+
+<div class="clearfix">
+    <div class="hint-text">Kết quả <b>1</b> trong <b>20</b> trang</div>
+    <ul class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+
+    <!-- Modal THÊM -->
+  <div class="modal fade" id="myModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Thêm giao dịch</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="form-group mb-3">
+            <label>Khách hàng</label>
+            <input type="text" id="customer" class="form-control" placeholder="Nhập tên khách hàng">
+          </div>
+
+          <div class="form-group mb-3">
+            <label>Nhân viên</label>
+            <input type="text" id="employee" class="form-control" placeholder="Nhập tên nhân viên">
+          </div>
+
+          <div class="form-group mb-3">
+            <label>Số tiền</label>
+            <input type="number" id="amount" class="form-control" placeholder="Nhập số tiền">
+          </div>
+            <div id="formMessage" class="text-danger"></div>
+        </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+            <button type="button" class="btn btn-primary" id="addTransactionBtn">Thêm</button>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+
+ </body>
+ <footer class="bg-primary text-white py-3 mt-5">
+  <div class="container text-left pr-4">
+    <strong>TRƯỜNG ĐẠI HỌC THỦY LỢI</strong><br>
+    Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội<br>
+    Điện thoại: (024) 38522201 - Fax: (024) 35633351<br>
+    Email: phonghcth@tlu.edu.vn
+  </div>
+</footer>
+</html>
